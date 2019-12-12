@@ -25,7 +25,7 @@
                     <img src="/static/icons/monitor.png" alt="">
                 </div>
                 <div class="text">
-                    <p class="h5">Accurately monitor your power consumption</p>
+                    <p class="h3">Accurately monitor your power consumption</p>
                 </div>
             </div>
             <div class="item">
@@ -33,7 +33,7 @@
                     <img src="/static/icons/visualize.png" alt="">
                 </div>
                 <div class="text">
-                    <p class="h5">Visualise energy usage and areas of wastage</p>
+                    <p class="h3">Visualise energy usage and areas of wastage</p>
                 </div>
             </div>
             <div class="item">
@@ -41,7 +41,7 @@
                     <img src="/static/icons/save.png" alt="">
                 </div>
                 <div class="text">
-                    <p class="h5">Save money!</p>
+                    <p class="h3 font-black">Save money!</p>
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@
 
                     <div class="point lg:w-full">
                         <h3 class="">Stay informed, Set custom alerts, Optimize energy usage.</h3>
-                        <p>Track energy use through the app with real time dataTrack energy use through the app with
+                        <p>Track energy use through the app with real time data. Track energy use through the app with
                             real time dataTrack energy use through the app with real time data</p>
                     </div>
 
