@@ -1,0 +1,31 @@
+$black: #040F0F;
+$xd-green: #0D381F;
+$d-green: #20924F;
+$green: #2CB864;
+$l-green: #6AC38E;
+$d-blue: #005377;
+$xd-blue: #052F5F;
+
+.xd-green {
+  color: $xd-green;
+}
+
+.d-green, .primary-color {
+  color: $d-green;
+}
+
+.green {
+  color: $green;
+}
+
+.l-green {
+  color: $l-green;
+}
+
+.d-blue {
+  color: $d-blue;
+}
+
+.xd-blue {
+  color: $xd-blue;
+}
