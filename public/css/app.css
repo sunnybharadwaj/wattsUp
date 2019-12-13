@@ -11530,99 +11530,169 @@ a:hover {
   color: #2CB864;
 }
 
-#simple-setup, #technology {
-  margin: 60px 0;
-  background: rgba(0, 0, 0, 0.11);
+@media (max-width: 1200px) {
+  .left {
+    padding: 30px 30px !important;
+  }
+
+  .energy-meter {
+    display: none;
+  }
 }
 
-#simple-setup .wrapper, #technology .wrapper {
-  background: rgba(0, 0, 0, 0.06);
-  padding: 100px 0 90px;
+.web .left, .web .right {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: scroll-y;
 }
 
-#questions h2 {
-  text-align: center;
+.web .left {
+  padding: 60px 60px;
 }
 
-.question {
-  padding: 20px 0;
-}
-
-.question h3 {
-  margin-bottom: 0 !important;
-}
-
-.question p {
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
-.small-h-bar {
-  height: 3px;
-  background: #2CB864;
-}
-
-.feature-list .item .icon img {
-  margin: 0 auto;
-  max-width: 150px;
-  padding: 20px;
-}
-
-#technology {
-  color: white !important;
-  background: lightblue url("/static/background.jpg") no-repeat scroll center;
-}
-
-#technology p {
-  font-weight: bold;
-}
-
-#how-it-works {
-  margin: 60px 0;
-}
-
-#how-it-works .image {
-  padding: 20px 40px;
-  margin-bottom: 60px;
-}
-
-#how-it-works .text-content .point {
-  margin-bottom: 40px;
-}
-
-#simple-setup {
-  background: lightblue url("/static/simple.jpg") no-repeat scroll center;
-}
-
-#simple-setup .wrapper {
-  background: transparent;
-}
-
-#users {
-  padding: 80px 0;
-  text-align: center;
-}
-
-#users .icon {
-  max-width: 150px;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-#users .user .text {
-  font-weight: 700;
+.web .left h2 {
+  font-weight: 500;
   letter-spacing: -0.03em;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #0D381F;
+}
+
+@media (min-width: 1224px) {
+  .web .left h2 {
+    font-size: 28px;
+  }
+}
+
+.web .left h3 {
+  font-weight: 800;
+  color: #20924F;
+  letter-spacing: -0.05em;
   font-size: 2.25em;
-  line-height: 1.27777778em;
-  margin-bottom: 40px;
+  line-height: 1.2;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
-#features .feature {
-  margin-bottom: 40px;
+.web .left .energy-meter {
+  max-width: 280px;
+  position: relative;
+  right: 65px;
+  margin-bottom: 20px;
 }
 
-#features .feature .image {
-  margin-bottom: 40px;
+.web .left .logo {
+  margin: 40px 0 30px;
+  max-width: 200px;
+}
+
+@media (min-width: 1224px) {
+  .web .left .logo {
+    max-width: 300px;
+  }
+}
+
+.web .left #info-btn {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.05em;
+  -webkit-transition: all 0.3ms ease-in-out;
+  transition: all 0.3ms ease-in-out;
+  color: #20924F;
+}
+
+.web .left #info-btn .text {
+  border-bottom: 3px solid #20924F;
+}
+
+.web .left #info-btn:hover .text {
+  color: #2CB864;
+  border-color: #2CB864;
+}
+
+.web .right {
+  background-image: url("/static/smarthome.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-color: #ccc;
+}
+
+#inquiry-form {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  padding: 30px 0;
+  background: rgba(255, 255, 255, 0.66);
+}
+
+#inquiry-form .logo {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+#inquiry-form .form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 60px 60px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#inquiry-form .form-wrapper .item {
+  margin-bottom: 20px;
+}
+
+#inquiry-form .form-wrapper button {
+  font-weight: 800;
+  -webkit-transition: all 0.3ms ease-in-out;
+  transition: all 0.3ms ease-in-out;
+  color: #20924F;
+}
+
+#inquiry-form .form-wrapper button .text {
+  border-bottom: 3px solid #20924F;
+}
+
+#inquiry-form .form-wrapper button:hover .text {
+  color: #2CB864;
+  border-color: #2CB864;
+}
+
+#inquiry-form .form-wrapper label {
+  font-weight: bold;
+  margin-bottom: 20px !important;
+}
+
+#inquiry-form .form-wrapper input {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(rgba(227, 227, 227, 0.13)));
+  background: linear-gradient(top, #f9f9f9, rgba(227, 227, 227, 0.13));
+  border: 2px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  width: 100%;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+#inquiry-form .form-wrapper textarea {
+  border: 2px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  width: 100%;
+  white-space: nowrap;
 }
 
 #welcome {

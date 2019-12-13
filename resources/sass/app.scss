@@ -8,7 +8,173 @@
 @import 'gridlover';
 @import 'general';
 
-@import 'pages/pages';
+//@import 'pages/pages';
+@media (max-width: 1200px) {
+  .left {
+    padding: 30px 30px !important;
+  }
+  .energy-meter {
+    display: none;
+  }
+}
+
+
+
+.web {
+  .left,.right {
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: scroll-y;
+  }
+
+  .left {
+    padding: 60px 60px;
+
+    h2 {
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      font-size: 24px;
+      line-height: 1.4;
+      color: $xd-green;
+      @media(min-width: 1224px) {
+        font-size: 28px;
+      }
+    }
+
+    h3 {
+      font-weight: 800;
+      color: $d-green;
+      letter-spacing: -0.05em;
+      font-size: 2.25em;
+      line-height: 1.2;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .energy-meter {
+      max-width: 280px;
+      position: relative;
+      right: 65px;
+      margin-bottom: 20px;
+      @media(min-width: 1224px) {
+
+      }
+    }
+
+    .logo {
+      margin: 40px 0 30px;
+      max-width: 200px;
+      @media(min-width: 1224px) {
+
+        max-width: 300px;
+      }
+
+    }
+
+
+    #info-btn {
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: -0.05em;
+      transition: all 0.3ms ease-in-out;
+      color: $d-green;
+      .text {
+        border-bottom: 3px solid $d-green;
+      }
+
+      &:hover {
+
+        .text {
+          color: $green;
+          border-color: $green;
+        }
+
+      }
+    }
+  }
+
+  .right {
+    background-image: url('/static/smarthome.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: #ccc;
+  }
+}
+
+#inquiry-form {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  padding: 30px 0;
+  background: rgba(255, 255, 255, 0.66);
+
+  .logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+
+  .form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 60px 60px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    button {
+      font-weight:800;
+      transition: all 0.3ms ease-in-out;
+      color: $d-green;
+      .text {
+        border-bottom: 3px solid $d-green;
+      }
+
+      &:hover {
+
+        .text {
+          color: $green;
+          border-color: $green;
+        }
+
+      }
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 20px !important;
+    }
+    input {
+      display: inline-block;
+      background: linear-gradient(top, #f9f9f9, rgba(227, 227, 227, 0.13));
+      border: 2px solid #999;
+      border-radius: 3px;
+      padding: 5px 8px;
+      outline: none;
+      width: 100%;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      cursor: pointer;
+      text-shadow: 1px 1px #fff;
+      font-weight: 700;
+      font-size: 10pt;
+    }
+    textarea {
+      border: 2px solid #999;
+      border-radius: 3px;
+      padding: 5px 8px;
+      outline: none;
+      width: 100%;
+      white-space: nowrap;
+    }
+  }
+}
 
 
 

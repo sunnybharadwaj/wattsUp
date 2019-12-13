@@ -3,5 +3,7 @@
 
 
 Route::get('/', function () {
-    return view('landing');
+    return view('coming_soon');
 });
+
+Route::post('/inquiry', 'InquiriesController@store');
