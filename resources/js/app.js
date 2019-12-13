@@ -6,3 +6,9 @@ $('#info-btn').click(function() {
 $('#close-btn, .close-btn').click(function () {
     $('#inquiry-form').hide();
 });
+
+$('#form-submit').click(function() {
+    $.post('inquiry', function(data) {
+        console.log(data);
+    });
+});

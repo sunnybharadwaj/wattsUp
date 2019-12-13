@@ -67,21 +67,30 @@
         </div>
         <form method="POST" action="/inquiry" >
             @csrf
+
             <div class="image logo">
                 <img  src="/static/wattsup_logo.png" alt="">
             </div>
             <h3>Please provide your details below:</h3>
+
+            @if($errors)
+                <ul>
+                    @foreach($errors as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            @endif
             <div class="item">
                 <label for="">Name</label> <div class="mb-2"></div>
-                <input type="text" name="name">
+                <input type="text" name="name" required>
             </div>
             <div class="item">
                 <label for="">Email</label> <div class="mb-2"></div>
-                <input type="email" name="email">
+                <input type="email" name="email" required>
             </div>
             <div class="item">
                 <label for="">Mobile Phone Number</label> <div class="mb-2"></div>
-                <input type="number" name="phone">
+                <input type="number" name="phone" required>
             </div>
             <div class="item">
                 <label for="">Message</label> <div class="mb-2"></div>
