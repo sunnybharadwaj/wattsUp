@@ -11540,7 +11540,62 @@ a:hover {
   }
 }
 
-.web .left, .web .right {
+@media (max-width: 769px) {
+  img.mobile-bg {
+    display: block;
+  }
+
+  .left {
+    height: auto !important;
+  }
+
+  .right {
+    display: none;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+
+  img.mobile-bg {
+    display: none;
+  }
+
+  .right {
+    display: block;
+  }
+
+  .left {
+    height: auto !important;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: scroll-y;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mobile-image {
+    display: block !important;
+    padding: 20px 0 0;
+    max-width: 180px;
+    position: relative;
+    right: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mobile-image {
+    display: none !important;
+  }
+}
+
+.web .right {
   min-height: 100vh;
   max-height: 100vh;
   overflow: scroll-y;
@@ -11558,7 +11613,7 @@ a:hover {
   color: #0D381F;
 }
 
-@media (min-width: 1224px) {
+@media (min-width: 769px) {
   .web .left h2 {
     font-size: 28px;
   }
@@ -11586,7 +11641,7 @@ a:hover {
   max-width: 200px;
 }
 
-@media (min-width: 1224px) {
+@media (min-width: 769px) {
   .web .left .logo {
     max-width: 300px;
   }
@@ -11631,17 +11686,35 @@ a:hover {
   background: rgba(255, 255, 255, 0.66);
 }
 
+@media (max-width: 769px) {
+  #inquiry-form {
+    background: white;
+  }
+}
+
 #inquiry-form .logo {
   max-width: 150px;
   margin-bottom: 10px;
 }
 
 #inquiry-form .form-wrapper {
-  max-width: 600px;
+  max-width: 769px;
   margin: 0 auto;
   background: white;
-  padding: 60px 60px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+@media (max-width: 769px) {
+  #inquiry-form .form-wrapper {
+    padding: 30px 30px;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 769px) {
+  #inquiry-form .form-wrapper {
+    padding: 60px 60px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
 }
 
 #inquiry-form .form-wrapper .item {
@@ -11667,6 +11740,7 @@ a:hover {
 #inquiry-form .form-wrapper label {
   font-weight: bold;
   margin-bottom: 20px !important;
+  letter-spacing: -0.03em;
 }
 
 #inquiry-form .form-wrapper input {
@@ -11693,6 +11767,25 @@ a:hover {
   outline: none;
   width: 100%;
   white-space: nowrap;
+}
+
+.copyright {
+  background: #20924F;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .copyright {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 500;
+  }
 }
 
 #welcome {

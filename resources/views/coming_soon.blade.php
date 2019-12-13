@@ -16,7 +16,10 @@
     </div>
     <div class="web">
         <div class="flex flex-wrap">
-            <div class="left w-full xl:w-1/2">
+            <div class="left w-full md:w-1/2">
+                <div class="mobile-image">
+                    <img src="/static/wattsup.png" alt="">
+                </div>
                 <div class="image energy-meter">
                     <img  src="/static/wattsup.png" alt="">
                 </div>
@@ -30,6 +33,8 @@
                     A Smart Energy Meter that enables real-time <strong>visualization</strong>, <strong>monitoring</strong> and <strong>budgeting</strong> of energy consumption for your offices / homes / business with 99% accuracy.
                 </h2>
 
+
+
                 <h3>
                     Website Under Construction
                 </h3>
@@ -38,9 +43,12 @@
                     <span class="text">
                         More Information
                     </span>
+                    <div class="mb-8"></div>
                 </div>
+
             </div>
-            <div class="right w-full xl:w-1/2">
+            <img src="/static/mobile_bg.jpg" alt="" class="mobile-bg w-full">
+            <div class="right w-full md:w-1/2">
                 {{--<img src="/static/smarthome.jpg" alt="">--}}
             </div>
         </div>
@@ -80,7 +88,12 @@
 
 </div>
 
+<footer class="mobile-only">
+    <div class="copyright">
+        Copyright 2019, All Rights Reserved
+    </div>
 
+</footer>
 
 <script src="/js/jquery.min.js"></script>
 <script src="{{asset('/js/app.js')}}"></script>
