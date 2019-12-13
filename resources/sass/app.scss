@@ -82,7 +82,7 @@
   }
 
   .left {
-    padding: 60px 60px;
+    padding: 30px 60px;
 
     h2 {
       font-weight: 500;
@@ -113,11 +113,11 @@
     }
 
     .logo {
-      margin: 40px 0 30px;
+      margin: 30px 0 20px;
       max-width: 200px;
       @media(min-width: 769px) {
 
-        max-width: 300px;
+        max-width: 240px;
       }
 
     }

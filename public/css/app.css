@@ -11602,7 +11602,7 @@ a:hover {
 }
 
 .web .left {
-  padding: 60px 60px;
+  padding: 30px 60px;
 }
 
 .web .left h2 {
@@ -11637,13 +11637,13 @@ a:hover {
 }
 
 .web .left .logo {
-  margin: 40px 0 30px;
+  margin: 30px 0 20px;
   max-width: 200px;
 }
 
 @media (min-width: 769px) {
   .web .left .logo {
-    max-width: 300px;
+    max-width: 240px;
   }
 }
 

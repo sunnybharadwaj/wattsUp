@@ -30,7 +30,10 @@
 
                 <h1 class="hidden">WattsUp Smart Energy Meter</h1>
                 <h2>
-                    A Smart Energy Meter that enables real-time <strong>visualization</strong>, <strong>monitoring</strong> and <strong>budgeting</strong> of energy consumption for your offices / homes / business with 99% accuracy.
+                    <div class="max-w-2xl">
+                        A Smart Energy Meter that enables real-time <strong>visualization</strong>, <strong>monitoring</strong> and <strong>budgeting</strong> of energy consumption for your offices / homes / business with 99% accuracy.
+                    </div>
+
                 </h2>
 
 
