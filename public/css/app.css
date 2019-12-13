@@ -11630,9 +11630,9 @@ a:hover {
 }
 
 .web .left .energy-meter {
-  max-width: 280px;
+  max-width: 180px;
   position: relative;
-  right: 65px;
+  right: 40px;
   margin-bottom: 20px;
 }
 
@@ -11654,14 +11654,21 @@ a:hover {
   -webkit-transition: all 0.3ms ease-in-out;
   transition: all 0.3ms ease-in-out;
   color: #20924F;
+  margin-top: 40px;
 }
 
 .web .left #info-btn .text {
-  border-bottom: 3px solid #20924F;
+  padding: 10px 30px;
+  border: 3px solid #20924F;
+}
+
+.web .left #info-btn:hover {
+  cursor: pointer;
 }
 
 .web .left #info-btn:hover .text {
-  color: #2CB864;
+  background: #2CB864;
+  color: white;
   border-color: #2CB864;
 }
 
@@ -11698,9 +11705,33 @@ a:hover {
 }
 
 #inquiry-form .form-wrapper {
+  position: relative;
   max-width: 769px;
   margin: 0 auto;
   background: white;
+}
+
+#inquiry-form .form-wrapper #close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#inquiry-form .form-wrapper #close-btn:hover {
+  cursor: pointer;
+}
+
+#inquiry-form .form-wrapper .close-btn {
+  color: darkred;
+  font-weight: 800;
+  border-bottom: 3px solid darkred;
+}
+
+#inquiry-form .form-wrapper .close-btn:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 769px) {

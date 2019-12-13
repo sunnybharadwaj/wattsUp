@@ -59,6 +59,9 @@
 </div>
 <div id="inquiry-form" class="hidden">
     <div class="form-wrapper">
+        <div id="close-btn">
+            <img src="/static/close_icon.png" alt="">
+        </div>
         <form method="POST" action="/inquiry" >
             @csrf
             <div class="image logo">
@@ -82,7 +85,9 @@
                 <textarea type="text" name="message">
                 </textarea>
             </div>
-            <button type="submit" class="h2 font-black d-green"><span class="text">Submit</span></button>
+            <button type="submit" class="h2 font-black green mr-4"><span class="text">Submit</span></button>
+
+            <div class=" close-btn inline-block h2 font-black xd-green"><span class="text">Close</span></div>
         </form>
     </div>
 
