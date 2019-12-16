@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Inquiry;
-use Mail;
 
 class InquiriesController extends Controller
 {
